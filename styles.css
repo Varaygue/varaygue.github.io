@@ -74,23 +74,20 @@ section h2 {
     color: #333;
 }
 
+
 /* Language Switcher */
 .language-switcher {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    transform: scale(1.1);
 }
 
-.language-switcher button {
-    background-color: #007acc;
-    color: white;
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    border: none;
-    border-radius: 5px;
+.language-switcher .flag-icon {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
     cursor: pointer;
-}
-
-.language-switcher button:hover {
-    background-color: #005f99;
+    margin: 0 5px;
+    border-radius: 5px; /* Optional: adds rounded corners */
+    transition: transform 0.2s;
 }
