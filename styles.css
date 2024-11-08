@@ -7,6 +7,7 @@
 
 /* Body and Background */
 body {
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2; /* Light grey background */
     color: #333; /* Dark text for readability */
@@ -77,18 +78,19 @@ section h2 {
 
 /* Language Switcher */
 .language-switcher {
-    text-align: right;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    max-width: 100%;
+    padding-right: 10px;
     margin-top: 1rem;
-    transform: scale(1.1);
 }
 
+
 .language-switcher .flag-icon {
-    width: 30px; /* Adjust size as needed */
+    width: 30px; 
     height: auto;
     cursor: pointer;
     margin: 0 5px;
-    border-radius: 5px; /* Optional: adds rounded corners */
+    border-radius: 5px;
     transition: transform 0.2s;
 }
