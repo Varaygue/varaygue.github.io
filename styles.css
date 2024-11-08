@@ -86,9 +86,9 @@ section h2 {
 
 /* Banner image styling */
 .banner-image {
-    width: 100%;  /* Make the image fill the entire width */
-    height: 100%; /* Make the image fill the entire height of the container */
-    
+    object-fit: cover; /* Ensures the image covers the entire space */
+    width: 100%;
+    height: 100%;
 }
 
 
