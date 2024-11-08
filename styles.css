@@ -102,5 +102,6 @@ section h2 {
     width: 100%; /* Ensure the container spans the entire width of the screen */
     padding: 0; /* Remove any extra padding if needed */
     margin: 0; /* Remove any margin if it's causing issues */
+    margin-top: 10px;
 }
 
