@@ -78,10 +78,7 @@ section h2 {
 
 /* Banner Section */
 .banner {
-    position: relative; /* Make the banner container the reference point for the language buttons */
     width: 100%;  /* Full width of the screen */
-    padding: 0;
-    margin: 0;
 }
 
 /* Banner image styling */
