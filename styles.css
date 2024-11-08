@@ -106,7 +106,5 @@ section h2 {
 .banner-image {
     width: 100%;
     height: auto;
-    max-height: 400px; /* Optional: set a maximum height for the banner */
-    object-fit: cover; /* Ensures the image covers the area without stretching */
 }
 
