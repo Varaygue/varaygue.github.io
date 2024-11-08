@@ -92,3 +92,24 @@ section h2 {
     color: #fff;
     text-align: center;
 }
+
+/* Language Switcher Styling */
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.language-switcher button {
+    background-color: #007acc;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-switcher button:hover {
+    background-color: #005f99;
+}
