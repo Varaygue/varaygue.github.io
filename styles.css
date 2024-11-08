@@ -77,6 +77,7 @@ section h2 {
 
 /* Language Switcher */
 .language-switcher {
+    text-align: right;
     display: flex;
     justify-content: right;
     margin-top: 1rem;
