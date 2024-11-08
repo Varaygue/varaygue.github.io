@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('fr')">Français</button>
+    </div>
+
+    <!-- Header / Hero Section -->
     <header class="header">
         <div class="header-content">
             <h1 class="en">Your Name</h1>
@@ -23,59 +29,44 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm <strong>Your Name</strong>, a passionate game designer with a strong background in creating immersive and interactive experiences. With a focus on player engagement and storytelling, I bring ideas to life through thoughtful level design, mechanics, and world-building.
+        <h2 class="en">About Me</h2>
+        <h2 class="fr" style="display: none;">À Propos de Moi</h2>
+        
+        <p class="en">
+            Hi, I'm <strong>Your Name</strong>, a passionate game designer with a strong background in creating immersive and interactive experiences.
         </p>
-        <p>
-            I have experience working with tools like Unreal Engine, Unity, and [Any other relevant tools you use]. I love collaborating with teams to bring unique visions to life, and I'm always looking for new ways to create memorable gameplay.
+        <p class="fr" style="display: none;">
+            Bonjour, je m'appelle <strong>Votre Nom</strong>, un concepteur de jeux passionné avec une solide expérience dans la création d'expériences immersives et interactives.
         </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>Projects</h2>
-        
-        <!-- Project Example -->
-        <div class="project">
-            <h3>Project Name 1</h3>
-            <p>A short description of this project. What type of game is it? What was your role? What makes it special?</p>
-            <a href="https://link-to-your-project.com" target="_blank" class="btn">View Project</a>
-        </div>
+        <h2 class="en">Projects</h2>
+        <h2 class="fr" style="display: none;">Projets</h2>
 
         <div class="project">
-            <h3>Project Name 2</h3>
-            <p>A short description of this project. Highlight your contributions, design choices, and unique elements.</p>
-            <a href="https://link-to-your-project.com" target="_blank" class="btn">View Project</a>
+            <h3 class="en">Project Name 1</h3>
+            <h3 class="fr" style="display: none;">Nom du Projet 1</h3>
+            <p class="en">A short description of this project in English.</p>
+            <p class="fr" style="display: none;">Une courte description de ce projet en français.</p>
         </div>
 
-        <!-- More projects later -->
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Game Engines: Unreal, Unity</li>
-            <li>Scripting: C#, Python</li>
-            <li>Level Design, World-Building</li>
-            <li>Prototyping and Iteration</li>
-            <li>Narrative Design</li>
-        </ul>
+        <!-- Additional projects go here -->
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>If you're interested in working together or have any questions, feel free to reach out!</p>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">Your GitHub Profile</a></p>
+        <h2 class="en">Contact</h2>
+        <h2 class="fr" style="display: none;">Contact</h2>
+        <p class="en">Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p class="fr" style="display: none;">Courriel : <a href="mailto:your-email@example.com">your-email@example.com</a></p>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
