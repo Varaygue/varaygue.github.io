@@ -79,7 +79,6 @@ section h2 {
 .banner {
     position: relative; /* Set this to allow positioning of children (like language buttons) */
     width: 100%; /* Make sure the banner spans the entire width of the screen */
-    height: 100vh; /* Set the height to the full height of the viewport */
     margin: 0;
     padding: 0;
     overflow: hidden; /* Prevent overflow */
@@ -89,7 +88,7 @@ section h2 {
 .banner-image {
     width: 100%;  /* Make the image fill the entire width */
     height: 100%; /* Make the image fill the entire height of the container */
-    object-fit: cover; /* Ensure the image covers the space without distortion */
+    
 }
 
 
