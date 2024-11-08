@@ -95,3 +95,18 @@ section h2 {
     border-radius: 5px;
     transition: transform 0.2s;
 }
+
+/* Style for the Banner */
+.banner {
+    width: 100%; /* Ensure it spans the entire width */
+    text-align: center; /* Center the image */
+    margin-top: 20px; /* Adds some space above the banner */
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Optional: set a maximum height for the banner */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
