@@ -79,7 +79,6 @@ section h2 {
 .banner {
     position: relative; /* Set this to allow positioning of children (like language buttons) */
     width: 100%; /* Make sure the banner spans the entire width of the screen */
-    overflow: hidden; /* Prevent overflow */
 }
 
 
