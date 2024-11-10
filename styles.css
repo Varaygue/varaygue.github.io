@@ -20,6 +20,12 @@ body {
     text-align: center;
 }
 
+.header-content {
+    display: flex;        /* Enables flexbox layout */
+    gap: 1rem;            /* Adds space between buttons */
+    justify-content: center; /* Centers buttons horizontally */
+}
+
 .header h1 {
     font-size: 2.5rem;
     color: #333;
