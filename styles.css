@@ -19,6 +19,8 @@ body {
     padding: 2rem;
     text-align: center;
     background-color: #333;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .header-content {
