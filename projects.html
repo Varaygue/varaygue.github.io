@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kenzi Khammes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner Section -->
+    <section class="banner">
+        <img src="images/Banner.png" alt="Banner Image" class="banner-image">
+        
+        <!-- Language Buttons on top of the banner -->
+        <div class="language-buttons">
+            <img src="images/gb.png" alt="English" onclick="setLanguage('en')" class="flag-icon">
+            <img src="images/fr.png" alt="Français" onclick="setLanguage('fr')" class="flag-icon">
+        </div>
+    </section>
+
+    <!-- Header / Hero Section -->
+    <header class="header">
+        <div class="header-content">
+            <a href="#index" class="btn en">Presentation</a>
+            <a href="#index" class="btn fr" style="display: none;">Présentation</a>
+            <a href="#projects" class="btn en">Projects</a>
+            <a href="#projects" class="btn fr" style="display: none;">Projets</a>
+            <a href="#cv" class="btn en">Curriculum Vitae</a>
+            <a href="#cv" class="btn fr" style="display: none;">Curriculum Vitae</a>
+            <a href="#contact" class="btn en">Contact</a>
+            <a href="#contact" class="btn fr" style="display: none;">Contact</a>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="en">School projects</h2>
+        <h2 class="fr" style="display: none;">Projets scolaires</h2>
+
+        <div class="project">
+            <h3 class="en">Project Name 1</h3>
+            <h3 class="fr" style="display: none;">Nom du Projet 1</h3>
+            <p class="en">Project description</p>
+            <p class="fr" style="display: none;">Description du projet.</p>
+        </div>
+
+        <h2 class="en">Personal projects</h2>
+        <h2 class="fr" style="display: none;">Projets personnels</h2>
+
+        <div class="project">
+            <h3 class="en">Project Name 1</h3>
+            <h3 class="fr" style="display: none;">Nom du Projet 1</h3>
+            <p class="en">Project description</p>
+            <p class="fr" style="display: none;">Description du projet.</p>
+        </div>
+
+        <h2 class="en">Jam games</h2>
+        <h2 class="fr" style="display: none;">Jeux de Jam</h2>
+
+        <div class="project">
+            <h3 class="en">Project Name 1</h3>
+            <h3 class="fr" style="display: none;">Nom du Projet 1</h3>
+            <p class="en">Project description</p>
+            <p class="fr" style="display: none;">Description du projet.</p>
+        </div>
+
+        <!-- Additional projects go here -->
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Kenzi Khammes. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
