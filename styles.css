@@ -78,7 +78,6 @@ section h2 {
 
 /* Contact Section */
 .contact p, .footer p {
-    padding-top: 40px;
     color: #333;
 }
 
@@ -121,6 +120,7 @@ section h2 {
 	height: 400px;
 	margin: auto;
 	margin-top: 60px;
+    margin-bottom: 60px;
 	position: relative;
 	-webkit-perspective: 500;
 }
