@@ -1,54 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Kenzi Khammes</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Banner Section -->
-    <section class="banner">
-        <img src="images/Banner.png" alt="Banner Image" class="banner-image">
+<!-- Todos: customize typography, refactor code to eliminate repeated css -->
+
+<!-- Mobile Nav -->
+      <nav class="navbar sticky-top d-lg-none navbar-dark bg-dark">
+        <div class="navbar-brand d-flex-column">Nikki Peel</div>    
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center" id="navbarText">
+    <ul class="navbar-nav mx-auto mb-4">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Portfolio</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  
+    <img src="https://i.imgur.com/YPktQq5.jpg" alt="">
+    <h1 class="pt-4">Nikki Peel</h1>
+            <p>Front End Developer</p>
+    <p id="resume"><a href="#"><i class="fas fa-download"></i> Download Resume</a></p>
+    
+     <ul class="nav row p-0 mt-4" id="social-nav">
+              <li class="col-sm-6 nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Email Me
+                </a>
+              </li>
+              <li class="col-sm-6 nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </li>
+              <li class="col-sm-6 nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-github"></i> Github
+                </a>
+              </li>
+              <li class="col-sm-6 nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-codepen"></i> Codepen
+                </a>
+              </li>
+            </ul>
+  </div>
+</nav> 
+
+<div class="container-fluid">
+      <div class="row">
+        <nav class="col-lg-3 d-none d-lg-block p-0 sidebar text-white">
+         <div id="gradient-bg">   
+          </div>
+           <img id="sidebar-img" src="https://i.imgur.com/YPktQq5.jpg" alt="">
+          <div class="sidebar-sticky">
+            <div class="nav-header text-center">
+              <h1>Nikki Peel</h1>
+            <p>Front End Developer</p>
+              <p id="resume"><a href="#"><i class="fas fa-download"></i> Download Resume</a></p>
+            </div>
+            <ul class="nav flex-column mx-auto pb-4 text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Education
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact
+                </a>
+              </li>
+            </ul>
+
+    
+            <p class="text-center p-4">Thank you for visiting my portfolio!</p>
+            <ul id="social-nav" class="nav flex-row mb-2 mx-2 text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Email Me
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-github"></i> Github
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-codepen"></i> Codepen
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         
-        <!-- Language Buttons on top of the banner -->
-        <div class="language-buttons">
-            <img src="images/gb.png" alt="English" onclick="setLanguage('en')" class="flag-icon">
-            <img src="images/fr.png" alt="Français" onclick="setLanguage('fr')" class="flag-icon">
-        </div>
-    </section>
 
-    <!-- Header / Hero Section -->
-    <header class="header">
-        <div class="header-content">
-            <a href="index.html" class="btn en">Presentation</a>
-            <a href="index.html" class="btn fr" style="display: none;">Présentation</a>
-            <a href="projects.html" class="btn en">Projects</a>
-            <a href="projects.html" class="btn fr" style="display: none;">Projets</a>
-            <a href="cv.html" class="btn en">Curriculum Vitae</a>
-            <a href="cv.html" class="btn fr" style="display: none;">Curriculum Vitae</a>
-            <a href="contact.html" class="btn en">Contact</a>
-            <a href="contact.html" class="btn fr" style="display: none;">Contact</a>
-        </div>
-    </header>
+  
+        <main role="main" class="col-md-8 ml-sm-auto p-4">
+          <div id="about" class="mt-4 p-4 text-right">
+            <h1>Hi there!</h1>
+            <p class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Doloribus reiciendis similique, quod minima tenetur perspiciatis quibusdam itaque suscipit commodi, explicabo, consequuntur illo. Quia excepturi, quisquam ex necessitatibus tenetur rerum enim delectus dolores ipsam alias officiis inventore architecto dicta sunt possimus distinctio expedita similique voluptate? </p>
+            <p>Vero nemo quisquam sunt in quae deserunt cupiditate tempore consectetur praesentium non, expedita omnis neque eius.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus reiciendis similique, quod minima tenetur perspiciatis quibusdam itaque suscipit commodi, explicabo, consequuntur illo. Quia excepturi, quisquam ex necessitatibus tenetur rerum enim delectus dolores ipsam alias officiis inventore architecto dicta sunt possimus distinctio expedita similique voluptate? Vero nemo quisquam sunt in quae deserunt cupiditate tempore consectetur praesentium non, expedita omnis neque eius.</p>
+            <div class="buttons mt-4">
+            <button class="m-2 p-2 btn">View Portfolio</button>
+            <button class="m-2 p-2 btn">Contact Me</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="en">About Me</h2>
-        <h2 class="fr" style="display: none;">À Propos de Moi</h2>
-        
-        <p class="en">
-            I'm a Junior Game Designer aspiring to make my first steps into the video-game industry.
-        </p>
-        <p class="fr" style="display: none;">
-            Je suis un Game Designer Junior aspirant à faire mes premiers pas dans l'industire du jeu-vidéo.
-        </p>
-    </section>
 
-    <footer class="footer">
-        <p>&copy; 2024 Kenzi Khammes. All rights reserved.</p>
-    </footer>
+  
 
-    <script src="scripts.js"></script>
-</body>
-</html>
+
