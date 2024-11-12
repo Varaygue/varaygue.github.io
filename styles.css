@@ -132,6 +132,7 @@ section h2 {
 
 .portfolio-bg{
   height: 400px;
+  background-color: #333;
 }
 
 .portfolio-item:hover .portfolio-bg{
