@@ -78,6 +78,7 @@ section h2 {
 
 /* Contact Section */
 .contact p, .footer p {
+    margin-top: 60px;
     color: #333;
 }
 
