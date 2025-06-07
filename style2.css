@@ -29,8 +29,6 @@ header {
     position: relative;
     background: url('images/ui_header_background.png') center;
     width: 100%;
-    margin: 0 auto;
-    z-index: 10;
 }
 
 .logo {
