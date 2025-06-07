@@ -30,6 +30,9 @@ header {
     background: url('images/ui_header_background.png') center;
     width: 100%;
     padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .logo {
