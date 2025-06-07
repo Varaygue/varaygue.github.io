@@ -7,11 +7,11 @@
 
 /* Body and Background */
 body {
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-    background-color: #899499;
-    color: #333; /* Dark text for readability */
-    line-height: 1.6;
+    background-image: url('images/ui_background.png'); /* Replace with your actual image path */
+    background-size: cover; /* Makes sure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps background fixed when scrolling (optional) */
 }
 
 /* Header */
