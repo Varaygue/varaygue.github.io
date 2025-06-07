@@ -15,7 +15,8 @@ body {
 
 /* Parchment Container */
 .page-container {
-    max-width: 1200px;
+    padding-top: 120px; /* increase to make space for the header */
+    position: relative;
     margin: 0 auto;
     padding: 40px;
     background: url('images/UI_AboutBG.png') no-repeat center center;
