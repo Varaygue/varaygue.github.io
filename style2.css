@@ -26,14 +26,11 @@ body {
 
 /* Header */
 header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
     max-width: 1200px;
-    z-index: 10;
+    margin: 0 auto;
     padding: 20px 40px;
+    z-index: 10;
 }
 
 .logo {
