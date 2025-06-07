@@ -15,22 +15,20 @@ body {
 
 /* Parchment Container */
 .page-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    background: url('images/UI_AboutBG.png') no-repeat center center;
-    background-size: cover;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    padding-top: 120px; /* increase to make space for the header */
+    position: relative;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    z-index: 10;
+    padding: 20px 40px;
 }
 
 .logo {
