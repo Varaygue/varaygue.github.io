@@ -1,4 +1,4 @@
-/* General Reset */
+﻿/* General Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,6 +26,8 @@ body {
 
 /* Header */
 header {
+
+    position: relative;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -96,6 +98,7 @@ header {
 /* Character Section */
 .character {
     text-align: center;
+    position: relative; /* Required for absolute positioning of child */
 }
 
 .character-image {
@@ -110,11 +113,17 @@ header {
     margin-bottom: 15px;
 }
 
+/* 👇 Adjusted to float under character image */
 .character-name {
     background: #3a3af0;
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Responsive */
