@@ -18,7 +18,7 @@ body {
     padding-top: 120px;
     margin: 0 auto;
     padding: 40px;
-    background: url('images/UI_AboutBG.png') no-repeat center center;
+    background: url('images/UI_AboutBG.png');
     background-size: cover;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
