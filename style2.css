@@ -29,7 +29,7 @@ header {
     position: relative;
     background: url('images/ui_header_background.png') center;
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .logo {
