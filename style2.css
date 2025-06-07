@@ -29,9 +29,7 @@ header {
     position: relative;
     background: url('images/ui_header_background.png') center;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 40px;
     z-index: 10;
 }
 
