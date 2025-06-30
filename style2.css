@@ -123,3 +123,8 @@ button {
     background-size: contain;
     padding: 0.5rem;
 }
+
+.page-container {
+    background: url('images/UI_AboutBG.png') no-repeat center;
+    background-size: contain;
+}
