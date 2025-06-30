@@ -46,9 +46,11 @@ header {
         display: inline-block;
         font-family: 'Cinzel', serif;
         text-shadow: 1px 1px 2px black;
+        width: 150px;
+        height: 50px;
     }
 
-/* Individual buttons */
+/* Default */
 .nav-about {
     background-image: url('images/nav_about.png');
 }
@@ -69,6 +71,27 @@ header {
     background-image: url('images/nav_cv.png');
 }
 
+/* Hover */
+.nav-about:hover {
+    background-image: url('images/nav_about_hover.png');
+}
+
+.nav-projects:hover {
+    background-image: url('images/nav_projects_hover.png');
+}
+
+.nav-blogs:hover {
+    background-image: url('images/nav_blogs_hover.png');
+}
+
+.nav-contact:hover {
+    background-image: url('images/nav_contact_hover.png');
+}
+
+.nav-cv:hover {
+    background-image: url('images/nav_cv_hover.png');
+}
+
 /* Optional: Kenzi name */
 .nav-kenzi {
     background: url('images/nav_name.png') no-repeat center;
@@ -81,9 +104,11 @@ header {
 }
 
 .cv-button {
-    border: 2px solid #fff;
-    padding: 0.3rem 0.7rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('images/nav_contact.png');
+}
+
+.cv-button:hover {
+    background-image: url('images/nav_contact.png');
 }
 
 /* Layout */
