@@ -35,20 +35,30 @@ header {
     margin-top: 0.5rem;
 }
 
-    .nav-links a {
-        text-decoration: none;
+    .nav-links a,
+    .nav-links .nav-kenzi {
+        display: inline-block;
+        text-align: center;
+        font-size: 32px;
         color: white;
-        font-weight: bold;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        padding: 0.5rem 1.5rem;
-        display: inline-block;
+        background-clip: padding-box;
         font-family: 'Cinzel', serif;
         text-shadow: 1px 1px 2px black;
-        width: 150px;
-        height: 50px;
+        text-decoration: none;
+        padding: 5rem 5rem;
+        box-sizing: border-box;
+        line-height: normal; /* remove fixed height centering */
+        height: auto; /* no fixed height */
     }
+
+.nav-cv {
+    width: 32px;
+    height: 32px;
+    text-align:center;
+}
 
 /* Default */
 .nav-about {
@@ -99,16 +109,8 @@ header {
     padding: 0.6rem 2rem;
     font-family: 'Cinzel', serif;
     color: white;
-    font-weight: bold;
     text-shadow: 1px 1px 2px black;
-}
-
-.cv-button {
-    background-image: url('images/nav_contact.png');
-}
-
-.cv-button:hover {
-    background-image: url('images/nav_contact.png');
+    font-size:32px;
 }
 
 /* Layout */
@@ -155,7 +157,6 @@ button {
     background-size: contain;
     border: none;
     color: white;
-    font-weight: bold;
     padding: 1rem 2rem;
     font-size: 1rem;
     cursor: pointer;
