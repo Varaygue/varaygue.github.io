@@ -1,54 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Kenzi Khammes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenzi Khammes — Technical Game Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Banner Section -->
-    <section class="banner">
-        <img src="images/Banner.png" alt="Banner Image" class="banner-image">
-        
-        <!-- Language Buttons on top of the banner -->
-        <div class="language-buttons">
-            <img src="images/gb.png" alt="English" onclick="setLanguage('en')" class="flag-icon">
-            <img src="images/fr.png" alt="Français" onclick="setLanguage('fr')" class="flag-icon">
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-bg">
+        <img src="assets/header/ui_header_background.png" alt="" aria-hidden="true" class="header-bg-img" />
+      </div>
+
+      <div class="header-content">
+        <span class="header-name">Kenzi Khammes</span>
+
+        <nav class="header-nav">
+          <a href="index.html" class="nav-btn nav-btn--about active" aria-label="About">
+            <img src="assets/header/ui_header_button_about_notHover.png" class="btn-default" alt="About" />
+            <img src="assets/header/ui_header_button_about_Hover.png"    class="btn-hover"   alt="About" />
+          </a>
+
+          <a href="projects.html" class="nav-btn nav-btn--projects" aria-label="Projects">
+            <img src="assets/header/ui_header_button_projects_notHover.png" class="btn-default" alt="Projects" />
+            <img src="assets/header/ui_header_button_projects_Hover.png"    class="btn-hover"   alt="Projects" />
+          </a>
+
+          <a href="blogs.html" class="nav-btn nav-btn--blogs" aria-label="Blogs">
+            <img src="assets/header/ui_header_button_blogs_notHover.png" class="btn-default" alt="Blogs" />
+            <img src="assets/header/ui_header_button_blogs_Hover.png"    class="btn-hover"   alt="Blogs" />
+          </a>
+
+          <a href="contact.html" class="nav-btn nav-btn--contact" aria-label="Contact">
+            <img src="assets/header/ui_header_button_contact_notHover.png" class="btn-default" alt="Contact" />
+            <img src="assets/header/ui_header_button_contact_Hover.png"    class="btn-hover"   alt="Contact" />
+          </a>
+
+          <a href="assets/cv.pdf" target="_blank" class="nav-btn nav-btn--cv" aria-label="Download CV">
+            <img src="assets/header/ui_header_button_cv_notHover.png" class="btn-default" alt="CV" />
+            <img src="assets/header/ui_header_button_cv_Hover.png"    class="btn-hover"   alt="CV" />
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════ MAIN ═══════════════ -->
+  <main class="page-main">
+
+    <!-- Outer wood/brick background -->
+    <div class="page-bg">
+      <img src="assets/ui_background.png" alt="" aria-hidden="true" class="page-bg-img" />
+    </div>
+
+    <!-- The large parchment frame that contains everything -->
+    <div class="about-frame">
+      <img src="assets/about/ui_about_Box_background.png" alt="" aria-hidden="true" class="about-frame-img" />
+
+      <!-- ── LEFT PANEL ── -->
+      <aside class="panel panel--left">
+        <img src="assets/about/ui_about_Box_section_background.png" alt="" aria-hidden="true" class="panel-bg" />
+
+        <div class="panel-content">
+
+          <!-- Title badge -->
+          <div class="title-badge">
+            <img src="assets/about/ui_about_textBox.png" alt="" aria-hidden="true" class="title-badge-img" />
+            <span class="title-badge-text">Technical Game Designer</span>
+          </div>
+
+          <!-- Skill diamonds row -->
+          <div class="skills-row">
+            <img src="assets/about/ui_about_image_.png" alt="Skill" class="skill-diamond" />
+            <img src="assets/about/ui_about_image_.png" alt="Skill" class="skill-diamond" />
+            <img src="assets/about/ui_about_image_.png" alt="Skill" class="skill-diamond" />
+            <img src="assets/about/ui_about_image_.png" alt="Skill" class="skill-diamond" />
+          </div>
+
+          <!-- Interests section header -->
+          <div class="section-header">
+            <img src="assets/about/ui_about_textBox.png" alt="" aria-hidden="true" class="section-header-img" />
+            <span class="section-header-text">Interests</span>
+          </div>
+
+          <!-- Interests text blocks -->
+          <div class="interests-text">
+            <p>Your first interest paragraph goes here. Describe what draws you to game design — mechanics, systems, narrative, simulation, or any other passion that fuels your work.</p>
+            <p>Your second interest paragraph goes here. This is a great place to mention specific genres or gameplay pillars you care most about designing around.</p>
+            <p>Your third interest paragraph goes here. You can talk about tools, engines, or methodologies you enjoy, and what makes your approach to design distinctive.</p>
+          </div>
+
+          <!-- Blog button -->
+          <div class="panel-btn-wrap">
+            <a href="blogs.html" class="panel-btn">
+              <img src="assets/about/ui_about_textBox_button_basic.png" class="btn-default" alt="My Blog" />
+              <img src="assets/about/ui_about_textBox_button_hover.png" class="btn-hover"   alt="My Blog" />
+              <span class="panel-btn-label">My Blog</span>
+            </a>
+          </div>
         </div>
-    </section>
+      </aside>
 
-    <!-- Header / Hero Section -->
-    <header class="header">
-        <div class="header-content">
-            <a href="index.html" class="btn en">Presentation</a>
-            <a href="index.html" class="btn fr" style="display: none;">Présentation</a>
-            <a href="projects.html" class="btn en">Projects</a>
-            <a href="projects.html" class="btn fr" style="display: none;">Projets</a>
-            <a href="cv.html" class="btn en">Curriculum Vitae</a>
-            <a href="cv.html" class="btn fr" style="display: none;">Curriculum Vitae</a>
-            <a href="contact.html" class="btn en">Contact</a>
-            <a href="contact.html" class="btn fr" style="display: none;">Contact</a>
+      <!-- ── CENTER CHARACTER ── -->
+      <div class="character-wrap">
+        <img src="assets/about/ui_about_Kenzi.png" alt="Kenzi Khammes character illustration" class="character-img" />
+
+        <!-- Name plate below character -->
+        <div class="name-plate">
+          <img src="assets/about/ui_about_textBox_name_basic.png" class="btn-default" alt="" aria-hidden="true" />
+          <img src="assets/about/ui_about_textBox_name_hover.png" class="btn-hover"   alt="" aria-hidden="true" />
+          <span class="name-plate-text">Kenzi Khammes</span>
         </div>
-    </header>
+      </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="en">About Me</h2>
-        <h2 class="fr" style="display: none;">À Propos de Moi</h2>
-        
-        <p class="en">
-            I'm a Junior Game Designer aspiring to make my first steps into the video-game industry.
-        </p>
-        <p class="fr" style="display: none;">
-            Je suis un Game Designer Junior aspirant à faire mes premiers pas dans l'industire du jeu-vidéo.
-        </p>
-    </section>
+      <!-- ── RIGHT PANEL ── -->
+      <aside class="panel panel--right">
+        <img src="assets/about/ui_about_Box_section_background.png" alt="" aria-hidden="true" class="panel-bg" />
 
-    <footer class="footer">
-        <p>&copy; 2024 Kenzi Khammes. All rights reserved.</p>
-    </footer>
+        <div class="panel-content">
 
-    <script src="scripts.js"></script>
+          <!-- Origin section -->
+          <div class="section-header">
+            <img src="assets/about/ui_about_textBox.png" alt="" aria-hidden="true" class="section-header-img" />
+            <span class="section-header-text">Origin</span>
+          </div>
+
+          <div class="info-text">
+            <p>Write your origin story here — where you're from, how you discovered game design, and what first made you fall in love with the craft. Keep it personal and honest.</p>
+          </div>
+
+          <!-- Background section -->
+          <div class="section-header">
+            <img src="assets/about/ui_about_textBox.png" alt="" aria-hidden="true" class="section-header-img" />
+            <span class="section-header-text">Background</span>
+          </div>
+
+          <div class="info-text">
+            <p>Your academic and professional background goes here. Mention degrees, bootcamps, studios, or projects that shaped who you are as a designer today. This is your credentials section.</p>
+          </div>
+
+          <!-- More / CV button -->
+          <div class="panel-btn-wrap">
+            <a href="assets/cv.pdf" target="_blank" class="panel-btn">
+              <img src="assets/about/ui_about_textBox_button_basic.png" class="btn-default" alt="More" />
+              <img src="assets/about/ui_about_textBox_button_hover.png" class="btn-hover"   alt="More" />
+              <span class="panel-btn-label">More</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div><!-- /about-frame -->
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
