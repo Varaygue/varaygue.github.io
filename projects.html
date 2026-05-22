@@ -8,15 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/placeholder.css" />
+  <link rel="stylesheet" href="css/projects.css" />
 </head>
 <body>
 
+  <!-- ═══════ HEADER ═══════ -->
   <header class="site-header">
     <div class="header-inner">
-      <div class="header-bg">
-        <img src="assets/header/ui_header_background.png" alt="" aria-hidden="true" class="header-bg-img" />
-      </div>
+      <img src="assets/header/ui_header_background.png" alt="" aria-hidden="true" class="header-bg-img" />
       <div class="header-content">
         <span class="header-name">Kenzi Khammes</span>
         <nav class="header-nav">
@@ -45,15 +44,52 @@
     </div>
   </header>
 
+  <!-- ═══════ MAIN ═══════ -->
   <main class="page-main">
     <div class="page-bg">
       <img src="assets/ui_background.png" alt="" aria-hidden="true" class="page-bg-img" />
     </div>
-    <div class="placeholder-content">
-      <h1>Projects</h1>
-      <p>Your projects page is coming soon.<br/>Add your project assets and this page will be built out like the About page.</p>
-    </div>
+
+    <div class="projects-layout">
+
+      <!-- ── TOP FRAME CAP ── -->
+      <div class="frame-cap frame-cap--top">
+        <img src="assets/projects/ui_projects_box_background_up_map_up.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- ── MIDDLE SECTION (blasons + cards) ── -->
+      <div class="frame-middle">
+        <!-- bg image -->
+        <img src="assets/projects/ui_projects_box_background_up_map_middle.png" alt="" aria-hidden="true" class="frame-middle-bg" />
+
+        <!-- LEFT: filter blasons -->
+        <aside class="blason-col" id="blasonCol">
+          <!-- populated by JS -->
+        </aside>
+
+        <!-- RIGHT: scrollable project list -->
+        <div class="cards-area">
+          <div class="cards-scroll" id="cardsScroll">
+            <!-- populated by JS -->
+          </div>
+
+          <!-- custom scrollbar -->
+          <div class="scrollbar-track" id="scrollTrack">
+            <img src="assets/projects/ui_projects_slider_back.png"    alt="" class="scrollbar-back" />
+            <img src="assets/projects/ui_projects_slider_handler.png" alt="" class="scrollbar-handle" id="scrollHandle" />
+          </div>
+        </div>
+
+      </div><!-- /frame-middle -->
+
+      <!-- ── BOTTOM FRAME CAP ── -->
+      <div class="frame-cap frame-cap--bottom">
+        <img src="assets/projects/ui_projects_box_background_up_map_down.png" alt="" aria-hidden="true" />
+      </div>
+
+    </div><!-- /projects-layout -->
   </main>
 
+  <script src="js/projects.js"></script>
 </body>
 </html>

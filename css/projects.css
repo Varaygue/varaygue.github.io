@@ -1,0 +1,307 @@
+/* ═══════════════════════════════════════════════
+   PROJECTS PAGE — projects.css
+   Frame is built from 3 vertical pieces:
+     up   1880 × 324
+     mid  1891 × 1080  (scales to fill)
+     down 1880 × 324
+   ═══════════════════════════════════════════════ */
+
+/* ── outer wrapper centres everything ── */
+.projects-layout {
+  position: relative;
+  z-index: 1;
+  width: min(1891px, 99vw);
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* ── top / bottom caps ── */
+.frame-cap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ── middle section ── */
+.frame-middle {
+  position: relative;
+  /* aspect ratio of the middle bg: 1891 × 1080 */
+  width: 100%;
+  aspect-ratio: 1891 / 1080;
+  overflow: hidden;
+}
+
+.frame-middle-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── BLASON COLUMN (left ~27%) ── */
+.blason-col {
+  position: absolute;
+  z-index: 2;
+  left:   0;
+  top:    0;
+  width:  27%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4% 0;
+}
+
+/* Each filter entry */
+.blason-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 55%;
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+.blason-item:hover { transform: scale(1.06); }
+
+.blason-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Label centred on the blason */
+.blason-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-size: clamp(8px, 1.4vw, 22px);
+  font-weight: 700;
+  color: var(--ink);
+  text-shadow: 0 1px 4px var(--shadow);
+  letter-spacing: 0.08em;
+  pointer-events: none;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* ── CARDS AREA (right ~66%) ── */
+.cards-area {
+  position: absolute;
+  z-index: 2;
+  left:   27%;
+  top:    3%;
+  right:  2.5%;
+  bottom: 3%;
+  display: flex;
+  gap: 0;
+}
+
+/* scrollable list */
+.cards-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* hide native scrollbar — we use the custom one */
+  scrollbar-width: none;
+  padding: 1% 2% 1% 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5%;
+}
+.cards-scroll::-webkit-scrollbar { display: none; }
+
+/* ── SINGLE PROJECT CARD ── */
+.project-card {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: filter 0.15s ease;
+}
+.project-card:hover { filter: brightness(1.08); }
+
+/* the blue card background image */
+.card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  pointer-events: none;
+}
+
+/* inner layout: image circle | text */
+.card-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 3% 4% 3% 2%;
+  gap: 4%;
+  /* maintain aspect of card bg: 798 × 219 */
+  aspect-ratio: 798 / 219;
+}
+
+/* circular game image */
+.card-img-wrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 20%;
+}
+.card-img-frame {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card-game-img {
+  position: absolute;
+  inset: 8%;
+  width: 84%;
+  height: 84%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* text block */
+.card-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.card-title {
+  font-family: var(--font-title);
+  font-size: clamp(7px, 0.85vw, 15px);
+  font-weight: 700;
+  color: var(--ink);
+  text-shadow: 0 1px 3px var(--shadow);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* role pill */
+.card-role-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+.card-role-bg {
+  display: block;
+  height: clamp(12px, 1.4vw, 22px);
+  width: auto;
+  /* stretch the pill to fit text */
+  min-width: 100%;
+}
+.card-role-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-size: clamp(5px, 0.55vw, 10px);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  padding: 0 6px;
+  pointer-events: none;
+}
+
+.card-desc {
+  font-family: var(--font-body);
+  font-size: clamp(6px, 0.7vw, 11.5px);
+  line-height: 1.55;
+  color: var(--ink);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  /* clamp to ~5 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── hidden cards (filtered out) ── */
+.project-card.hidden {
+  display: none;
+}
+
+/* ── CUSTOM SCROLLBAR ── */
+.scrollbar-track {
+  position: relative;
+  flex-shrink: 0;
+  width: clamp(14px, 1.6vw, 26px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 0;
+  user-select: none;
+}
+
+.scrollbar-back {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.scrollbar-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  cursor: grab;
+  touch-action: none;
+}
+.scrollbar-handle:active { cursor: grabbing; }
+
+/* ═══════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════ */
+@media (max-width: 800px) {
+  .frame-middle {
+    aspect-ratio: unset;
+    min-height: 80vh;
+  }
+  .blason-col {
+    position: static;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+    gap: 8px;
+  }
+  .blason-item { width: 18%; }
+  .cards-area {
+    position: static;
+    width: 100%;
+    padding: 12px;
+  }
+  .card-title  { font-size: 13px; }
+  .card-desc   { font-size: 11px; -webkit-line-clamp: 3; }
+}
